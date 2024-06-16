@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Gericht</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20240616120452">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css?_v=20240616120452">
+	<script src="https://cdn.jsdelivr.net/npm/flatpickr?_v=20240616120452"></script>
+
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__logo">
+					<a href="index.html">Gerícht</a>
+				</div>
+				<div class="header__menu menu">
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<div class="menu__item menu__link link-drop">
+								<a href="#" class="link-drop__button">All Pages</a>
+								<ul class="link-drop__list">
+									<li><a href="index.html">Home</a></li>
+									<li><a href="about-us.html">About Us</a></li>
+									<li><a href="services.html">Services</a></li>
+									<li><a href="contact.html">Contact</a></li>
+									<li><a href="our-chefs.html">Our Team</a></li>
+									<li><a href="chef-details.html">Our Chef</a></li>
+									<li><a href="faq.html">FAQ</a></li>
+									<li><a href="404.html">404</a></li>
+								</ul>
+							</div>
+							<li class="menu__item"><a href="index.html" class="menu__link">Home</a></li>
+							<li class="menu__item"><a href="services.html" class="menu__link">Services</a></li>
+							<li class="menu__item"><a href="about-us.html" class="menu__link">About Us</a></li>
+							<li class="menu__item"><a href="contact.html" class="menu__link">Contact Us</a></li>
+						</ul>
+					</nav>
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+				</div>
+				<div data-da=".menu__body, 991.98" class="header__buttons header-buttons">
+					<a class="header-buttons__registration" href="404.html">Log in / registration</a>
+					<span></span>
+					<a class="header-buttons__book-table" href="404.html">book table</a>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="hero">
+				<div class="hero__container">
+					<div class="hero__content">
+						<div class="hero__text">
+							<div class="main-subtitle">
+								<h6>Chase the new Flavour</h6>
+							</div>
+							<h1>The key to Fine dining</h1>
+							<p>Sit tellus lobortis sed senectus vivamus molestie. Condimentum volutpat morbi facilisis
+								quam scelerisque sapien. Et, penatibus aliquam amet tellus </p>
+							<div class="hero__button">
+								<a class="main-button" href="services.html">Explore Menu</a>
+							</div>
+						</div>
+						<div class="hero__img">
+							<div class="hero__img-content">
+								<img src="img/hero/hero-img.jpg" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="about-us-our-history">
+				<div class="about-us-our-history__container">
+					<div class="about-us-our-history__content">
+						<div class="about-us-our-history__about-us block-about-us">
+							<div class="about-us-our-history__title block-about-us__title">
+								<h2>About Us</h2>
+							</div>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis pharetra adipiscing
+								ultrices
+								vulputate posuere tristique. In sed odio nec aliquet eu proin mauris et.</p>
+							<div class="block-about-us__button">
+								<a class="main-button" href="about-us.html">Know More</a>
+							</div>
+						</div>
+						<div class="about-us-our-history__knife">
+							<img src="img/about-and-history/knife.png" alt="">
+						</div>
+						<div class="about-us-our-history__our-history block-our-history">
+							<div class="block-our-history__title">
+								<h2>Our History</h2>
+							</div>
+							<p>Adipiscing tempus ullamcorper lobortis odio tellus arcu volutpat. Risus placerat morbi
+								volutpat habitasse interdum mi aliquam In sed odio nec aliquet.</p>
+							<div class="block-our-history__button">
+								<a class="main-button" href="about-us.html">Know More</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="reservations">
+				<div class="reservations__container">
+					<div class="reservations__content">
+						<div class="reservations__title main-title-center">
+							<div class="main-subtitle">
+								<h6>Reservations</h6>
+							</div>
+							<h2>Book A Table</h2>
+						</div>
+						<form class="reservations__form form" action="#" id="form">
+							<select class="form__input input-people" id="people" required name="form[]" placeholder="">
+								<option value="" disabled selected hidden>Select number of people</option>
+								<option value="">1 person</option>
+								<option value="">2 person</option>
+								<option value="">3 person</option>
+								<option value="">5+ person</option>
+							</select>
+							<input id="date-picker" class="form__input input-date" required type="date" name="form[]" placeholder="Choose Date">
+
+							<select class="form__input input-time" id="time" required name="form[]" placeholder="Choose Time">
+								<option value="" disabled selected hidden>Choose time</option>
+								<option value="">9:00 AM</option>
+								<option value="">12:00 AM</option>
+								<option value="">3:00 PM</option>
+								<option value="">6:00 PM</option>
+								<option value="">9:00 PM</option>
+							</select>
+							<div class="reservations__button form-button">
+								<button type="submit" class="main-button">Book Now</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+			<section class="all-menu">
+				<div class="all-menu__container">
+					<ul class="all-menu__list">
+						<li><a href="404.html">Bar Menu</a></li>
+						<li><a href="404.html">Food Menu</a></li>
+						<li><a href="404.html">Desserts Menu</a></li>
+					</ul>
+				</div>
+			</section>
+			<section class="todays-special">
+				<div class="todays-special__container">
+					<div class="todays-special__title main-title-center">
+						<div class="main-subtitle">
+							<h6>Menu that fits you palatte</h6>
+						</div>
+						<h2>Today’s Special</h2>
+					</div>
+					<div class="todays-special__content">
+						<div class="todays-special__wine-beer drinks-menu">
+							<div class="drinks-menu__title">
+								Wine & Beer
+							</div>
+							<ul class="drinks-menu__list">
+								<li class="drinks-menu__item item-drinks-menu">
+									<div class="item-drinks-menu__content">
+										<div class="item-drinks-menu__name">
+											<h5>Chapel Hill Shiraz</h5>
+										</div>
+										<div class="item-drinks-menu__price">
+											$56
+										</div>
+									</div>
+									<ul class="item-drinks-menu__ingredients">
+										<li>AU</li>
+										<li>Bottle</li>
+									</ul>
+								</li>
+								<li class="drinks-menu__item item-drinks-menu">
+									<div class="item-drinks-menu__content">
+										<div class="item-drinks-menu__name">
+											<h5>Catena Malbec</h5>
+										</div>
+										<div class="item-drinks-menu__price">
+											$59
+										</div>
+									</div>
+									<ul class="item-drinks-menu__ingredients">
+										<li>AR</li>
+										<li>Bottle</li>
+									</ul>
+								</li>
+								<li class="drinks-menu__item item-drinks-menu">
+									<div class="item-drinks-menu__content">
+										<div class="item-drinks-menu__name">
+											<h5>La Vieille Rosé</h5>
+										</div>
+										<div class="item-drinks-menu__price">
+											$44
+										</div>
+									</div>
+									<ul class="item-drinks-menu__ingredients">
+										<li>FR</li>
+										<li>750 ml</li>
+									</ul>
+								</li>
+								<li class="drinks-menu__item item-drinks-menu">
+									<div class="item-drinks-menu__content">
+										<div class="item-drinks-menu__name">
+											<h5>Rhino Pale Ale</h5>
+										</div>
+										<div class="item-drinks-menu__price">
+											$31
+										</div>
+									</div>
+									<ul class="item-drinks-menu__ingredients">
+										<li>CA</li>
+										<li>750 ml</li>
+									</ul>
+								</li>
+								<li class="drinks-menu__item item-drinks-menu">
+									<div class="item-drinks-menu__content">
+										<div class="item-drinks-menu__name">
+											<h5>Irish Guinness </h5>
+										</div>
+										<div class="item-drinks-menu__price">
+											$26
+										</div>
+									</div>
+									<ul class="item-drinks-menu__ingredients">
+										<li>IE</li>
+										<li>750 ml</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="todays-special__img">
+							<img src="img/todays-special/cocktails.png" alt="">
+						</div>
+						<div class="todays-special__cocktails drinks-menu">
+							<div class="drinks-menu__title">
+								Cocktails
+							</div>
+							<ul class="drinks-menu__list">
+								<li class="drinks-menu__item item-drinks-menu">
+									<div class="item-drinks-menu__content">
+										<div class="item-drinks-menu__name">
+											<h5>Aperol Spritz
+											</h5>
+										</div>
+										<div class="item-drinks-menu__price">
+											$20
+										</div>
+									</div>
+									<ul class="item-drinks-menu__ingredients">
+										<li>Aperol</li>
+										<li>Villa Marchesi prosecco</li>
+										<li>soda</li>
+										<li>30ml</li>
+									</ul>
+								</li>
+								<li class="drinks-menu__item item-drinks-menu">
+									<div class="item-drinks-menu__content">
+										<div class="item-drinks-menu__name">
+											<h5>Dark 'N' Stormy</h5>
+										</div>
+										<div class="item-drinks-menu__price">
+											$16
+										</div>
+									</div>
+									<ul class="item-drinks-menu__ingredients">
+										<li>Dark rum</li>
+										<li>Ginger beer</li>
+										<li>Slice of lime</li>
+									</ul>
+								</li>
+								<li class="drinks-menu__item item-drinks-menu">
+									<div class="item-drinks-menu__content">
+										<div class="item-drinks-menu__name">
+											<h5>Daiquiri</h5>
+										</div>
+										<div class="item-drinks-menu__price">
+											$100
+										</div>
+									</div>
+									<ul class="item-drinks-menu__ingredients">
+										<li>Rum</li>
+										<li>Citrus juice</li>
+										<li>Sugar</li>
+									</ul>
+								</li>
+								<li class="drinks-menu__item item-drinks-menu">
+									<div class="item-drinks-menu__content">
+										<div class="item-drinks-menu__name">
+											<h5>Old Fashioned </h5>
+										</div>
+										<div class="item-drinks-menu__price">
+											$31
+										</div>
+									</div>
+									<ul class="item-drinks-menu__ingredients">
+										<li>Bourbon</li>
+										<li>Brown sugar</li>
+										<li>Angostura Bitters</li>
+									</ul>
+								</li>
+								<li class="drinks-menu__item item-drinks-menu">
+									<div class="item-drinks-menu__content">
+										<div class="item-drinks-menu__name">
+											<h5>Negroni</h5>
+										</div>
+										<div class="item-drinks-menu__price">
+											$46
+										</div>
+									</div>
+									<ul class="item-drinks-menu__ingredients">
+										<li>Gin</li>
+										<li>Sweet Vermouth</li>
+										<li>Campari</li>
+										<li>Orange garnish</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="todays-special__button">
+						<a class="main-button" href="404.html">View More</a>
+					</div>
+				</div>
+			</section>
+			<section class="chef">
+				<div class="chef__container">
+					<div class="chef__img">
+						<div class="chef__img-content">
+							<img src="img/chefs-word/chef-img.png" alt="">
+						</div>
+					</div>
+					<div class="chef__text">
+						<div class="chef__title main-title-left">
+							<div class="main-subtitle">
+								<h6>Chef’s Word</h6>
+							</div>
+							<h2>What we believe in</h2>
+						</div>
+						<div class="chef__quote">
+							<p><span></span>Lorem ipsum dolor sit amet, consectetur adipiscing elit auctor sit. auctor
+								sit iaculis in
+								arcu. Vulputate nulla lobortis mauris eget sit. Nulla scelerisque scelerisque congue ac
+								consequat, aliquam molestie lectus eu. Congue iaculis integer curabitur semper sit nunc.
+							</p>
+						</div>
+						<div class="chef__name-posithion">
+							<h4>Kevin Luo</h4>
+							<p>Chef & Founder</p>
+						</div>
+						<div class="chef__signature">
+							<img src="img/chefs-word/chef-signature.svg" alt="">
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="testimony">
+				<div class="testimony__container">
+					<div class="testimony__title main-title-center">
+						<div class="main-subtitle">
+							<h6>Testimony</h6>
+						</div>
+						<h2>Happy customers</h2>
+					</div>
+					<div class="testimony__content">
+						<div class="testimony__item item-testimony">
+							<div class="item-testimony__img">
+								<img src="img/testimony/wade.jpg" alt="">
+							</div>
+							<div class="item-testimony__text">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing sit. auctor sit iaculis in arcu.
+									Vulputate nulla lobortis mauris eget sit. Nulla scelerisque scelerisque congue.</p>
+								<h4>Wade Warren</h4>
+								<div class="item-testimony__posithion">Sommelier</div>
+							</div>
+						</div>
+						<div class="testimony__item item-testimony">
+							<div class="item-testimony__img">
+								<img src="img/testimony/jane.jpg" alt="">
+							</div>
+							<div class="item-testimony__text">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing sit. auctor sit iaculis in arcu.
+									Vulputate nulla lobortis mauris eget sit. Nulla scelerisque scelerisque congue.
+									Lorem ipsum dolor sit amet, consectetur adipiscing sit.</p>
+								<h4>Jane Cooper</h4>
+								<div class="item-testimony__posithion">Chef</div>
+							</div>
+						</div>
+						<div class="testimony__item item-testimony">
+							<div class="item-testimony__img">
+								<img src="img/testimony/robert.jpg" alt="">
+							</div>
+							<div class="item-testimony__text">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing sit. auctor sit iaculis in arcu.
+									Vulputate nulla lobortis mauris eget sit.</p>
+								<h4>Robert Fox</h4>
+								<div class="item-testimony__posithion">Chef</div>
+							</div>
+						</div>
+						<div class="testimony__item item-testimony">
+							<div class="item-testimony__img">
+								<img src="img/testimony/brooklyn.jpg" alt="">
+							</div>
+							<div class="item-testimony__text">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing sit. auctor sit iaculis in arcu.
+									Vulputate nulla lobortis mauris eget sit. Nulla scelerisque scelerisque congue.</p>
+								<h4>Brooklyn Simmons</h4>
+								<div class="item-testimony__posithion">Caterer</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="video-prev">
+				<div class="video-prev__container">
+				</div>
+				<video id="video-prev" loop>
+					<source src="img/secthion-video/video-prev.mp4" type="video/mp4" />
+				</video>
+				<button class="video-prev__button" id="play-pause-btn"></button>
+			</section>
+			<section class="our-laurels">
+				<div class="our-laurels__container">
+					<div class="our-laurels__text">
+						<div class="our-laurels__title main-title-left">
+							<div class="main-subtitle">
+								<h6>Awards & recognition</h6>
+							</div>
+							<h2>Our Laurels</h2>
+						</div>
+						<div class="our-laurels__text-content">
+							<div class="our-laurels__item item-our-laurels">
+								<div class="item-our-laurels__img">
+									<img src="img/our-laurels/icon-2.svg" alt="">
+								</div>
+								<div class="item-our-laurels__text">
+									<h5>Bib Gourmond</h5>
+									<p>Lorem ipsum dolor sit amet, consectetur.</p>
+								</div>
+							</div>
+							<div class="our-laurels__item item-our-laurels">
+								<div class="item-our-laurels__img">
+									<img src="img/our-laurels/icon-1.svg" alt="">
+								</div>
+								<div class="item-our-laurels__text">
+									<h5>Rising Star</h5>
+									<p>Lorem ipsum dolor sit amet, consectetur.</p>
+								</div>
+							</div>
+							<div class="our-laurels__item item-our-laurels">
+								<div class="item-our-laurels__img">
+									<img src="img/our-laurels/icon-5.svg" alt="">
+								</div>
+								<div class="item-our-laurels__text">
+									<h5>AA Hospitality </h5>
+									<p>Lorem ipsum dolor sit amet, consectetur.</p>
+								</div>
+							</div>
+							<div class="our-laurels__item item-our-laurels">
+								<div class="item-our-laurels__img">
+									<img src="img/our-laurels/icon-3.svg" alt="">
+								</div>
+								<div class="item-our-laurels__text">
+									<h5>Outstanding Chef</h5>
+									<p>Lorem ipsum dolor sit amet, consectetur.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="our-laurels__img">
+						<img src="img/our-laurels/our-laurels-img.jpg" alt="">
+					</div>
+				</div>
+			</section>
+			<section class="blog">
+				<div class="blog__container">
+					<div class="blog__title main-title-center">
+						<div class="main-subtitle">
+							<h6>Blogs</h6>
+						</div>
+						<h2>Gerícht updates</h2>
+					</div>
+					<div class="blog__content">
+						<div class="blog__item item-blog">
+							<div class="item-blog__img">
+								<a href="404.html">
+									<img src="img/blog/tips-for-prepping.jpg" alt="">
+								</a>
+							</div>
+							<div class="item-blog__content">
+								<div class="item-blog__date-author">
+									<div class="item-blog__date">
+										16 Apr 2021
+									</div>
+									<div class="item-blog__author">
+										- Annalisa L
+									</div>
+								</div>
+								<a href="404.html">
+									<h4>tips for prepping and caring for your grill</h4>
+								</a>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis
+									elit elit scelerisque egestas mus in.</p>
+								<a class="item-blog__button" href="404.html">Read More</a>
+							</div>
+						</div>
+						<div class="blog__item item-blog">
+							<div class="item-blog__img">
+								<a href="404.html">
+									<img src="img/blog/summer-cocktails.jpg" alt="">
+								</a>
+							</div>
+							<div class="item-blog__content">
+								<div class="item-blog__date-author">
+									<div class="item-blog__date">
+										23 May 2021
+									</div>
+									<div class="item-blog__author">
+										- John Micheal
+									</div>
+								</div>
+								<a href="404.html">
+									<h4>summer cocktails and mocktails</h4>
+								</a>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis
+									elit elit scelerisque egestas mus in.</p>
+								<a class="item-blog__button" href="404.html">Read More</a>
+							</div>
+						</div>
+						<div class="blog__item item-blog">
+							<div class="item-blog__img">
+								<a href="404.html">
+									<img src="img/blog/easy-cooking.jpg" alt="">
+								</a>
+							</div>
+							<div class="item-blog__content">
+								<div class="item-blog__date-author">
+									<div class="item-blog__date">
+										06 Aug 2021
+									</div>
+									<div class="item-blog__author">
+										- Fred W
+									</div>
+								</div>
+								<a href="404.html">
+									<h4>easy cooking for college students</h4>
+								</a>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis
+									elit elit scelerisque egestas mus in.</p>
+								<a class="item-blog__button" href="404.html">Read More</a>
+							</div>
+						</div>
+					</div>
+					<div class="blog__button">
+						<a class="main-button" href="404.html">View More</a>
+					</div>
+				</div>
+			</section>
+			<section class="instagram">
+				<div class="instagram__container">
+					<div class="instagram__text">
+						<div class="instagram__title main-title-left">
+							<div class="main-subtitle">
+								<h6>Instagram</h6>
+							</div>
+							<h2>Photo Gallery</h2>
+						</div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit
+							elit scelerisque egestas mu.</p>
+						<div class="instagram__button">
+							<a class="main-button" href="instagram.com">View More</a>
+						</div>
+					</div>
+					<div class="instagram__slider swiper">
+						<div class="instagram__wrapper swiper-wrapper">
+							<div data-gallery class="instagram__slide swiper-slide">
+								<img src="img/instagram/inst-photo-1.jpg" alt="">
+							</div>
+							<div data-gallery class="instagram__slide swiper-slide">
+								<img src="img/instagram/inst-photo-2.jpg" alt="">
+							</div>
+							<div data-gallery class="instagram__slide swiper-slide">
+								<img src="img/instagram/inst-photo-3.jpg" alt="">
+							</div>
+							<div data-gallery class="instagram__slide swiper-slide">
+								<img src="img/instagram/inst-photo-2.jpg" alt="">
+							</div>
+							<div data-gallery class="instagram__slide swiper-slide">
+								<img src="img/instagram/inst-photo-1.jpg" alt="">
+							</div>
+							<div data-gallery class="instagram__slide swiper-slide">
+								<img src="img/instagram/inst-photo-2.jpg" alt="">
+							</div>
+						</div>
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div>
+					</div>
+				</div>
+			</section>
+			<section class="newsletter">
+				<div class="newsletter__container">
+					<div class="newsletter__content">
+						<div class="newsletter__cover">
+							<div class="newsletter__title main-title-center">
+								<div class="main-subtitle">
+									<h6>Newsletter</h6>
+								</div>
+								<h2>Subscribe to Our Newsletter</h2>
+							</div>
+							<p>And never miss latest Updates!</p>
+							<form class="newsletter__form form">
+								<input class="form__input input-email" autocomplete="off" type="email" required name="form[]" placeholder="Email Address">
+								<button type="submit" class="main-button">Subscribe</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__content">
+					<div class="footer__contact contact-footer">
+						<h4>Contact Us</h4>
+						<ul>
+							<li><a href="https://maps.app.goo.gl/6zJzLxzNQnYBPX3i6">9 W 53rd St, New York, NY 10019, USA</a>
+							</li>
+							<li><a href="tel:+1212-344-1230">+1 212-344-1230</a></li>
+							<li><a href="tel:+1212-344-1230">+1 212-344-1230</a></li>
+						</ul>
+					</div>
+					<div class="footer__logo-info logo-footer">
+						<div class="logo-footer__logo">
+							<img src="img/footer/logo-footer.svg" alt="Logo Footer">
+						</div>
+						<div class="logo-footer__quote">
+							"The best way to find yourself is to lose yourself in the service of others.”
+						</div>
+						<div class="logo-footer__social">
+							<a href="https://www.facebook.com/"><img src="img/icons/icon-facebook.svg" alt=""></a>
+							<a href="https://x.com/"><img src="img/icons/icon-twitter.svg" alt=""></a>
+							<a href="https://www.instagram.com/"><img src="img/icons/icon-inst.svg" alt=""></a>
+						</div>
+					</div>
+					<div class="footer__working-hours working-hours">
+						<h4>Working Hours</h4>
+						<div class="working-hours__item">
+							<div class="working-hours__day">
+								Monday-Friday:
+							</div>
+							<div class="working-hours__time">
+								08:00 am -12:00 am
+							</div>
+						</div>
+						<div class="working-hours__item">
+							<div class="working-hours__day">
+								Saturday-Sunday:
+							</div>
+							<div class="working-hours__time">
+								07:00am -11:00 pm
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer__right-reserved">2021 Gerícht. All Rights reserved.</div>
+			</div>
+		</footer>
+	</div>
+	<!-- <div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">Закрыть</button>
+			<div class="popup__text">
+				Text
+			</div>
+		</div>
+	</div>
+</div> -->
+	<script src="js/app.min.js?_v=20240616120452"></script>
+</body>
+
+</html>
